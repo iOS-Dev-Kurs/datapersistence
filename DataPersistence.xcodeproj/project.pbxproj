@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8780FE241D021CC60079DD40 /* CreateItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780FE221D021CC60079DD40 /* CreateItemViewController.swift */; };
+		8780FE251D021CC60079DD40 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780FE231D021CC60079DD40 /* ItemsViewController.swift */; };
 		87D78C9B1D01A28F00DF478F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D78C9A1D01A28F00DF478F /* AppDelegate.swift */; };
+		87D78C9D1D01A28F00DF478F /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D78C9C1D01A28F00DF478F /* ListsViewController.swift */; };
 		87D78CA01D01A28F00DF478F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D78C9E1D01A28F00DF478F /* Main.storyboard */; };
 		87D78CA31D01A28F00DF478F /* DataPersistence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87D78CA11D01A28F00DF478F /* DataPersistence.xcdatamodeld */; };
 		87D78CA51D01A28F00DF478F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D78CA41D01A28F00DF478F /* Assets.xcassets */; };
 		87D78CA81D01A28F00DF478F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D78CA61D01A28F00DF478F /* LaunchScreen.storyboard */; };
 		87D78CB01D01A2FB00DF478F /* PersistentStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D78CAF1D01A2FB00DF478F /* PersistentStack.swift */; };
+		87D78CB31D01AB7A00DF478F /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D78CB21D01AB7A00DF478F /* List.swift */; };
+		87D78CB51D01ABE600DF478F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D78CB41D01ABE600DF478F /* Item.swift */; };
+		87D78CB91D01B0C600DF478F /* CreateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D78CB81D01B0C600DF478F /* CreateListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8780FE221D021CC60079DD40 /* CreateItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemViewController.swift; sourceTree = "<group>"; };
+		8780FE231D021CC60079DD40 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		87D78C971D01A28F00DF478F /* DataPersistence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataPersistence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D78C9A1D01A28F00DF478F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87D78C9C1D01A28F00DF478F /* ListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
 		87D78C9F1D01A28F00DF478F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87D78CA21D01A28F00DF478F /* DataPersistence.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataPersistence.xcdatamodel; sourceTree = "<group>"; };
 		87D78CA41D01A28F00DF478F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87D78CA71D01A28F00DF478F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87D78CA91D01A28F00DF478F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87D78CAF1D01A2FB00DF478F /* PersistentStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentStack.swift; sourceTree = "<group>"; };
+		87D78CB21D01AB7A00DF478F /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		87D78CB41D01ABE600DF478F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		87D78CB81D01B0C600DF478F /* CreateListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				87D78CA11D01A28F00DF478F /* DataPersistence.xcdatamodeld */,
+				87D78CB21D01AB7A00DF478F /* List.swift */,
+				87D78CB41D01ABE600DF478F /* Item.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -79,6 +93,10 @@
 		87D78CBA1D01B1C600DF478F /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				87D78C9C1D01A28F00DF478F /* ListsViewController.swift */,
+				87D78CB81D01B0C600DF478F /* CreateListViewController.swift */,
+				8780FE231D021CC60079DD40 /* ItemsViewController.swift */,
+				8780FE221D021CC60079DD40 /* CreateItemViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -155,8 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				87D78CA31D01A28F00DF478F /* DataPersistence.xcdatamodeld in Sources */,
+				87D78C9D1D01A28F00DF478F /* ListsViewController.swift in Sources */,
+				87D78CB91D01B0C600DF478F /* CreateListViewController.swift in Sources */,
 				87D78C9B1D01A28F00DF478F /* AppDelegate.swift in Sources */,
+				87D78CB31D01AB7A00DF478F /* List.swift in Sources */,
+				87D78CB51D01ABE600DF478F /* Item.swift in Sources */,
 				87D78CB01D01A2FB00DF478F /* PersistentStack.swift in Sources */,
+				8780FE241D021CC60079DD40 /* CreateItemViewController.swift in Sources */,
+				8780FE251D021CC60079DD40 /* ItemsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

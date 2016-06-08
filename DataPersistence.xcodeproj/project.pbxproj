@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		831CBF721D08027700C2B917 /* createNewMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831CBF711D08027700C2B917 /* createNewMonth.swift */; };
+		832160AE1D076B3300DE2F67 /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832160AD1D076B3300DE2F67 /* BillViewController.swift */; };
+		83436B2A1D06194300FC5547 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83436B291D06194300FC5547 /* OverviewViewController.swift */; };
+		83436B2C1D06195D00FC5547 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83436B2B1D06195D00FC5547 /* ListViewController.swift */; };
+		83436B2E1D061D2A00FC5547 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83436B2D1D061D2A00FC5547 /* List.swift */; };
+		83436B321D06233500FC5547 /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83436B311D06233500FC5547 /* Overview.swift */; };
 		87D78C9B1D01A28F00DF478F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D78C9A1D01A28F00DF478F /* AppDelegate.swift */; };
 		87D78CA01D01A28F00DF478F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D78C9E1D01A28F00DF478F /* Main.storyboard */; };
 		87D78CA31D01A28F00DF478F /* DataPersistence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87D78CA11D01A28F00DF478F /* DataPersistence.xcdatamodeld */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		831CBF711D08027700C2B917 /* createNewMonth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createNewMonth.swift; sourceTree = "<group>"; };
+		832160AD1D076B3300DE2F67 /* BillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillViewController.swift; sourceTree = "<group>"; };
+		83436B291D06194300FC5547 /* OverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		83436B2B1D06195D00FC5547 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		83436B2D1D061D2A00FC5547 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		83436B311D06233500FC5547 /* Overview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
 		87D78C971D01A28F00DF478F /* DataPersistence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataPersistence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D78C9A1D01A28F00DF478F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87D78C9F1D01A28F00DF478F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				87D78CA11D01A28F00DF478F /* DataPersistence.xcdatamodeld */,
+				83436B2D1D061D2A00FC5547 /* List.swift */,
+				83436B311D06233500FC5547 /* Overview.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -79,6 +93,10 @@
 		87D78CBA1D01B1C600DF478F /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				83436B291D06194300FC5547 /* OverviewViewController.swift */,
+				83436B2B1D06195D00FC5547 /* ListViewController.swift */,
+				832160AD1D076B3300DE2F67 /* BillViewController.swift */,
+				831CBF711D08027700C2B917 /* createNewMonth.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -154,9 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83436B321D06233500FC5547 /* Overview.swift in Sources */,
 				87D78CA31D01A28F00DF478F /* DataPersistence.xcdatamodeld in Sources */,
+				832160AE1D076B3300DE2F67 /* BillViewController.swift in Sources */,
+				83436B2A1D06194300FC5547 /* OverviewViewController.swift in Sources */,
 				87D78C9B1D01A28F00DF478F /* AppDelegate.swift in Sources */,
+				83436B2C1D06195D00FC5547 /* ListViewController.swift in Sources */,
 				87D78CB01D01A2FB00DF478F /* PersistentStack.swift in Sources */,
+				83436B2E1D061D2A00FC5547 /* List.swift in Sources */,
+				831CBF721D08027700C2B917 /* createNewMonth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

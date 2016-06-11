@@ -24,7 +24,7 @@ class BillViewController: UIViewController {
             let list = NSEntityDescription.insertNewObjectForEntityForName("List", inManagedObjectContext: context) as! List
             list.list = overviewBill
             list.purpose = purposeTxt.text ?? "No Name"
-            list.money = Double(amountTxt.text!)!
+            list.money = amountTxt.text!
             list.date = dateTxt.text ?? "unknown"
         }
     }

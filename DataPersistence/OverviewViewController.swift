@@ -42,11 +42,10 @@ class OverviewViewController: UITableViewController {
                 listVC.overview = overview
                 listVC.title = overview.newMonth
             case "createNewMonth":
-                do {
-                    try context.save()
-                } catch {
-                    print("Failed saving context: \(error)")
-                }
+                let editContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+                editContext.parentContext = self.context
+                let createBillViewController = (segue.destinationViewController as! UINavigationController).topViewController as! BillViewController
+                createBillViewController.context = editContext
             default:
                 break
         }

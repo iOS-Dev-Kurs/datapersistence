@@ -66,6 +66,22 @@ class ListViewController : UITableViewController {
 
 }
 
+extension ListViewController {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.sections?.count ?? 0
+    }
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("ListViewCell", forIndexPath: indexPath)
+        let item = items.sections![indexPath.section].objects![indexPath.row] as! List
+        cell.textLabel?.text = item.purpose
+        cell.detailTextLabel?.text = item.money
+        return cell
+    }
+}
+
 extension ListViewController: NSFetchedResultsControllerDelegate {
     
     func controllerWillChangeContent(controller: NSFetchedResultsController) {

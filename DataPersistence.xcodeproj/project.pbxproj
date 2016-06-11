@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32153A831D0C319B00DEAFA9 /* GamedayListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32153A821D0C319B00DEAFA9 /* GamedayListController.swift */; };
+		32153A851D0C32E400DEAFA9 /* GameListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32153A841D0C32E400DEAFA9 /* GameListController.swift */; };
+		32153A871D0C334100DEAFA9 /* Gameday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32153A861D0C334100DEAFA9 /* Gameday.swift */; };
+		32153A891D0C33F700DEAFA9 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32153A881D0C33F700DEAFA9 /* Game.swift */; };
+		32153A8B1D0C341F00DEAFA9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32153A8A1D0C341F00DEAFA9 /* Group.swift */; };
+		32153A8D1D0C344A00DEAFA9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32153A8C1D0C344A00DEAFA9 /* Team.swift */; };
+		32153A8F1D0C345800DEAFA9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32153A8E1D0C345800DEAFA9 /* Result.swift */; };
+		32153A911D0C357F00DEAFA9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32153A901D0C357F00DEAFA9 /* DetailViewController.swift */; };
+		32153A931D0C463B00DEAFA9 /* CreateGamedayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32153A921D0C463B00DEAFA9 /* CreateGamedayController.swift */; };
+		32153A951D0C599D00DEAFA9 /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32153A941D0C599D00DEAFA9 /* CreateGameViewController.swift */; };
+		32153A971D0C68AF00DEAFA9 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32153A961D0C68AF00DEAFA9 /* GameTableViewCell.swift */; };
+		32153A991D0C8D4600DEAFA9 /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32153A981D0C8D4600DEAFA9 /* TeamModel.swift */; };
 		87D78C9B1D01A28F00DF478F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D78C9A1D01A28F00DF478F /* AppDelegate.swift */; };
 		87D78CA01D01A28F00DF478F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D78C9E1D01A28F00DF478F /* Main.storyboard */; };
 		87D78CA31D01A28F00DF478F /* DataPersistence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87D78CA11D01A28F00DF478F /* DataPersistence.xcdatamodeld */; };
@@ -16,6 +28,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32153A821D0C319B00DEAFA9 /* GamedayListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamedayListController.swift; sourceTree = "<group>"; };
+		32153A841D0C32E400DEAFA9 /* GameListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameListController.swift; sourceTree = "<group>"; };
+		32153A861D0C334100DEAFA9 /* Gameday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gameday.swift; sourceTree = "<group>"; };
+		32153A881D0C33F700DEAFA9 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		32153A8A1D0C341F00DEAFA9 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		32153A8C1D0C344A00DEAFA9 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		32153A8E1D0C345800DEAFA9 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		32153A901D0C357F00DEAFA9 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		32153A921D0C463B00DEAFA9 /* CreateGamedayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGamedayController.swift; sourceTree = "<group>"; };
+		32153A941D0C599D00DEAFA9 /* CreateGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
+		32153A961D0C68AF00DEAFA9 /* GameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		32153A981D0C8D4600DEAFA9 /* TeamModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
 		87D78C971D01A28F00DF478F /* DataPersistence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataPersistence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D78C9A1D01A28F00DF478F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87D78C9F1D01A28F00DF478F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +96,12 @@
 			isa = PBXGroup;
 			children = (
 				87D78CA11D01A28F00DF478F /* DataPersistence.xcdatamodeld */,
+				32153A861D0C334100DEAFA9 /* Gameday.swift */,
+				32153A881D0C33F700DEAFA9 /* Game.swift */,
+				32153A8A1D0C341F00DEAFA9 /* Group.swift */,
+				32153A8C1D0C344A00DEAFA9 /* Team.swift */,
+				32153A8E1D0C345800DEAFA9 /* Result.swift */,
+				32153A981D0C8D4600DEAFA9 /* TeamModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -79,6 +109,12 @@
 		87D78CBA1D01B1C600DF478F /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				32153A821D0C319B00DEAFA9 /* GamedayListController.swift */,
+				32153A841D0C32E400DEAFA9 /* GameListController.swift */,
+				32153A901D0C357F00DEAFA9 /* DetailViewController.swift */,
+				32153A921D0C463B00DEAFA9 /* CreateGamedayController.swift */,
+				32153A941D0C599D00DEAFA9 /* CreateGameViewController.swift */,
+				32153A961D0C68AF00DEAFA9 /* GameTableViewCell.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -115,6 +151,7 @@
 				TargetAttributes = {
 					87D78C961D01A28F00DF478F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LS389VJ9WF;
 					};
 				};
 			};
@@ -154,8 +191,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32153A911D0C357F00DEAFA9 /* DetailViewController.swift in Sources */,
+				32153A951D0C599D00DEAFA9 /* CreateGameViewController.swift in Sources */,
+				32153A8D1D0C344A00DEAFA9 /* Team.swift in Sources */,
+				32153A851D0C32E400DEAFA9 /* GameListController.swift in Sources */,
 				87D78CA31D01A28F00DF478F /* DataPersistence.xcdatamodeld in Sources */,
+				32153A891D0C33F700DEAFA9 /* Game.swift in Sources */,
+				32153A931D0C463B00DEAFA9 /* CreateGamedayController.swift in Sources */,
+				32153A971D0C68AF00DEAFA9 /* GameTableViewCell.swift in Sources */,
+				32153A8B1D0C341F00DEAFA9 /* Group.swift in Sources */,
 				87D78C9B1D01A28F00DF478F /* AppDelegate.swift in Sources */,
+				32153A8F1D0C345800DEAFA9 /* Result.swift in Sources */,
+				32153A991D0C8D4600DEAFA9 /* TeamModel.swift in Sources */,
+				32153A831D0C319B00DEAFA9 /* GamedayListController.swift in Sources */,
+				32153A871D0C334100DEAFA9 /* Gameday.swift in Sources */,
 				87D78CB01D01A2FB00DF478F /* PersistentStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,10 +320,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DataPersistence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-heidelberg.ios-dev-kurs.DataPersistence";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-heidelberg.colin.ios-dev-kurs.DataPersistence";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -282,10 +334,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DataPersistence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-heidelberg.ios-dev-kurs.DataPersistence";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-heidelberg.colin.ios-dev-kurs.DataPersistence";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

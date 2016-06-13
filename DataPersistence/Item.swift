@@ -12,7 +12,7 @@ import CoreData
 class Item : NSManagedObject {
 	
 	@NSManaged var name: String
-	@NSManaged var date: NSDate
+	@NSManaged var created: NSDate
 	@NSManaged var importance: Int
 	@NSManaged var done: Bool
 	

@@ -40,7 +40,7 @@
         <!--List View Controller-->
         <scene sceneID="Rxv-Ny-vQz">
             <objects>
-                <tableViewController id="Kxg-JB-jzW" userLabel="List View Controller" sceneMemberID="viewController">
+                <tableViewController id="Kxg-JB-jzW" userLabel="List View Controller" customClass="ListViewController" customModule="DataPersistence" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="RXO-h5-oHf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +70,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="hZE-Wc-dY6" kind="show" id="eOy-Fy-gMU"/>
+                                    <segue destination="hZE-Wc-dY6" kind="show" identifier="showItems" id="eOy-Fy-gMU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -82,7 +82,7 @@
                     <navigationItem key="navigationItem" id="oFm-Sz-CjA">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qQ4-Qw-sXy">
                             <connections>
-                                <segue destination="gQA-5m-r50" kind="presentation" id="bbB-tL-aYH"/>
+                                <segue destination="gQA-5m-r50" kind="presentation" identifier="addList" id="bbB-tL-aYH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -94,7 +94,7 @@
         <!--Item View Controller-->
         <scene sceneID="iWl-YF-i43">
             <objects>
-                <tableViewController id="hZE-Wc-dY6" userLabel="Item View Controller" sceneMemberID="viewController">
+                <tableViewController id="hZE-Wc-dY6" userLabel="Item View Controller" customClass="ItemViewController" customModule="DataPersistence" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="A6E-0T-iLt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +117,7 @@
                     <navigationItem key="navigationItem" title="Title" id="5XT-3l-Vjm">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Cqu-1p-Y39">
                             <connections>
-                                <segue destination="ylC-w9-zQF" kind="presentation" id="vIr-2N-51o"/>
+                                <segue destination="ylC-w9-zQF" kind="presentation" identifier="addItem" id="vIr-2N-51o"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -129,7 +129,7 @@
         <!--Add List Controller-->
         <scene sceneID="ahp-KH-dbH">
             <objects>
-                <viewController id="ndq-hA-kUK" userLabel="Add List Controller" sceneMemberID="viewController">
+                <viewController id="ndq-hA-kUK" userLabel="Add List Controller" customClass="AddListController" customModule="DataPersistence" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="778-zS-K9X"/>
                         <viewControllerLayoutGuide type="bottom" id="A5O-6b-Ir9"/>
@@ -167,7 +167,7 @@
         <!--Add Item Controller-->
         <scene sceneID="Ppn-PC-ArL">
             <objects>
-                <viewController id="XJT-qo-MZJ" userLabel="Add Item Controller" sceneMemberID="viewController">
+                <viewController id="XJT-qo-MZJ" userLabel="Add Item Controller" customClass="AddItemController" customModule="DataPersistence" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GHj-0o-9tP"/>
                         <viewControllerLayoutGuide type="bottom" id="ZnG-HI-gvL"/>

@@ -2,16 +2,18 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15F34" minimumToolsVersion="Automatic">
     <entity name="To_Do_List" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="no_of_entries" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="no_of_items" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="entry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="To_Do_Thing" inverseName="parentlist" inverseEntity="To_Do_Thing" syncable="YES"/>
     </entity>
     <entity name="To_Do_Thing" syncable="YES">
+        <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="done" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="importance" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="parentlist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="To_Do_List" inverseName="entry" inverseEntity="To_Do_List" syncable="YES"/>
     </entity>
     <elements>
         <element name="To_Do_List" positionX="-54" positionY="9" width="128" height="90"/>
-        <element name="To_Do_Thing" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="To_Do_Thing" positionX="-63" positionY="-18" width="128" height="120"/>
     </elements>
 </model>

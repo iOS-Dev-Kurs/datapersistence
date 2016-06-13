@@ -12,7 +12,7 @@ import CoreData
 class List : NSManagedObject {
 	
 	@NSManaged var name: String
-	@NSManaged var no_items: Int
-	@NSManaged var Set<Item>
+	//@NSManaged var no_of_items: Int
+	@NSManaged var items: Set<Item>
 
 }

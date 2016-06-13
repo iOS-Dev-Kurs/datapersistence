@@ -142,7 +142,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XK9-rq-aeZ">
-                                <rect key="frame" x="20" y="72" width="560" height="30"/>
+                                <rect key="frame" x="20" y="112" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -150,6 +150,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="XK9-rq-aeZ" firstAttribute="leading" secondItem="FV8-Yf-qGS" secondAttribute="leadingMargin" id="2ou-IE-NUj"/>
+                            <constraint firstItem="XK9-rq-aeZ" firstAttribute="trailing" secondItem="FV8-Yf-qGS" secondAttribute="trailingMargin" id="9Md-rP-3G1"/>
                             <constraint firstItem="XK9-rq-aeZ" firstAttribute="top" secondItem="FV8-Yf-qGS" secondAttribute="firstBaseline" constant="72" id="hcj-vc-d8g"/>
                         </constraints>
                     </view>
@@ -202,7 +203,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OwI-0u-wSo">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OwI-0u-wSo">
                                 <rect key="frame" x="20" y="72" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -223,6 +224,7 @@
                             <constraint firstItem="OwI-0u-wSo" firstAttribute="top" secondItem="oaY-gq-4mA" secondAttribute="firstBaseline" constant="72" id="lYh-H9-Xyt"/>
                             <constraint firstItem="wqL-SG-5eb" firstAttribute="centerX" secondItem="oaY-gq-4mA" secondAttribute="centerX" id="qUz-fH-49b"/>
                             <constraint firstItem="OwI-0u-wSo" firstAttribute="leading" secondItem="oaY-gq-4mA" secondAttribute="leadingMargin" id="xiV-RZ-ovW"/>
+                            <constraint firstItem="OwI-0u-wSo" firstAttribute="trailing" secondItem="oaY-gq-4mA" secondAttribute="trailingMargin" id="yXG-xG-C03"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f1l-5N-L5J">

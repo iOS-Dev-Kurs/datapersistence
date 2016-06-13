@@ -16,6 +16,7 @@ class Item : NSManagedObject {
 	@NSManaged var created: NSDate
 	@NSManaged var importance: Int
 	@NSManaged var done: Bool
+
 	
 	// Called when the object is created, i.e. inserted in a context
 	override func awakeFromInsert() {

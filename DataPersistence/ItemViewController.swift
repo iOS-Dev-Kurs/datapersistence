@@ -43,7 +43,7 @@ class ItemViewController : UITableViewController{
 	
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		switch segue.identifier! {
-		case "createItem":
+		case "addItem":
 			
 			// Create edit context
 			let editContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
@@ -94,7 +94,7 @@ class ItemViewController : UITableViewController{
 
 // MARK: - Table View Datasource
 
-extension ItemsViewController {
+extension ItemViewController {
 	
 	override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 		return items.sections?.count ?? 0
@@ -108,8 +108,16 @@ extension ItemsViewController {
 	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCellWithIdentifier("ItemCell", forIndexPath: indexPath)
 		let item = items.sections![indexPath.section].objects![indexPath.row] as! Item
-		cell.textLabel?.text = item.title
-		cell.detailTextLabel?.text = item.notes
+		cell.textLabel?.text = item.name
+		var importance: String
+		switch item.importance{
+		case 0: importance = "0"
+		case 1: importance = "!"
+		case 2: importance = "!!"
+		case 3: importance = "!!!"
+		default: importance = "x"
+		}
+		cell.detailTextLabel?.text = importance
 		cell.textLabel?.textColor = item.done ? UIColor.lightGrayColor() : UIColor.darkTextColor()
 		cell.accessoryType = item.done ? .Checkmark : .None
 		return cell
@@ -183,6 +191,4 @@ extension ItemViewController: NSFetchedResultsControllerDelegate {
 		tableView.endUpdates()
 	}
 	
-}
-
 }

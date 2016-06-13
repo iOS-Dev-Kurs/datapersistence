@@ -42,7 +42,7 @@ class ListViewController : UITableViewController{
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 		switch segue.identifier! {
 			
-		case "createList":
+		case "addList":
 			
 			// Create a disposable child context. Changes saved to this context are propagated as changes to the parent context. We may also discard the context, in which case any changes in it are also discarded.
 			let editContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)

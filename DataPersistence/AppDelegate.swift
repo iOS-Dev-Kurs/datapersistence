@@ -27,7 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // The context is our connection to Core Data's managed objects.
         let context = persistentStack.mainContext
         // TODO: Pass context on to view controllers
-        
+        let destinationViewController = (window?.rootViewController as? UINavigationController)?.topViewController as? ListViewController
+		destinationViewController!.context = context
         return true
     }
 

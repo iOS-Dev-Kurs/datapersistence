@@ -17,7 +17,7 @@ class ListViewController : UITableViewController{
 	/// Fetches objects from the database and observes changes
 	private lazy var lists: NSFetchedResultsController = {
 		// The fetch request defines the subset of objects to fetch
-		let fetchRequest = NSFetchRequest(entityName: "List")
+		let fetchRequest = NSFetchRequest(entityName: "To_Do_List")
 		fetchRequest.sortDescriptors = [ NSSortDescriptor(key: "name", ascending: true) ]
 		// Create the fetched results controller with the fetch request
 		let resultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context, sectionNameKeyPath: nil, cacheName: nil)

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15F34" minimumToolsVersion="Automatic">
-    <entity name="To_Do_List" syncable="YES">
+    <entity name="To_Do_List" representedClassName=".List" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="no_of_items" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="items" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="To_Do_Thing" inverseName="list" inverseEntity="To_Do_Thing" syncable="YES"/>
     </entity>
-    <entity name="To_Do_Thing" syncable="YES">
+    <entity name="To_Do_Thing" representedClassName=".Item" syncable="YES">
         <attribute name="created" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="done" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="importance" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>

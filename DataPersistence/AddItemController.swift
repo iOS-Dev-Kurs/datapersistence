@@ -30,8 +30,9 @@ class AddItemController : UIViewController{
 			// Create list and set properties
 			let item = NSEntityDescription.insertNewObjectForEntityForName("To_Do_Thing", inManagedObjectContext: context) as! Item
 			item.name = titleTextfield.text ?? "Unnamed Item"
-			let importance = importanceField.selectedSegmentIndex
-			item.importance = importance ?? 0
+			//let importance = importanceField.selectedSegmentIndex
+			//print(importance)
+			//item.importance = importance ?? 0
 			item.list = list
 			// Save context
 			do {

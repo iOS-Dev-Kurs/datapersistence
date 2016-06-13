@@ -44,7 +44,7 @@ class OverviewViewController: UITableViewController {
             case "createNewMonth":
                 let editContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
                 editContext.parentContext = self.context
-                let createBillViewController = (segue.destinationViewController as! UINavigationController).topViewController as! BillViewController
+                let createBillViewController = (segue.destinationViewController as! UINavigationController).topViewController as! NewMonthViewController
                 createBillViewController.context = editContext
             default:
                 break
@@ -74,14 +74,15 @@ class OverviewViewController: UITableViewController {
 
 extension OverviewViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return overviews.sections?.count ?? 0
     }
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return overviews.sections?.count ?? 0
+        let section = overviews.sections![section]
+        return section.numberOfObjects
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("OverviewCell", forIndexPath: indexPath)
-        let overview = overviews.sections![indexPath.section].objects![indexPath.row] as! Overview
+        let overview = overviews.objectAtIndexPath(indexPath) as! Overview
         cell.textLabel?.text = overview.newMonth
         cell.detailTextLabel?.text = String(overview.listItem.count)
         return cell

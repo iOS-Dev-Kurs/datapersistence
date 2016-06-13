@@ -21,11 +21,12 @@ class BillViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "addBill" {
-            let list = NSEntityDescription.insertNewObjectForEntityForName("List", inManagedObjectContext: context) as! List
-            list.list = overviewBill
-            list.purpose = purposeTxt.text ?? "No Name"
-            list.money = amountTxt.text!
-            list.date = dateTxt.text ?? "unknown"
+            let editContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+            editContext.parentContext = context
+            editContext.ex
+            context.list.purpose = purposeTxt.text ?? "No Name"
+            context.list.money = amountTxt.text!
+            context.list.date = dateTxt.text ?? "unknown"
         }
     }
 }

@@ -19,6 +19,11 @@ class NewMonthViewController : UIViewController {
         if segue.identifier == "saveNewMonth" {
             let overview = NSEntityDescription.insertNewObjectForEntityForName("Overview", inManagedObjectContext: context) as! Overview
             overview.newMonth = newMonthTxt.text ?? "Unnamed Month"
+            do {
+                try context.save()
+            } catch {
+                print("Failed saving context: \(error)")
+            }
         }
     
     }

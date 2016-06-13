@@ -23,7 +23,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="7gC-Vw-Y3q" kind="show" identifier="showDetailList" id="0Ta-J4-ZrT"/>
+                                    <segue destination="hAM-Ig-jro" kind="show" identifier="showDetailList" id="Hv4-Ub-vK0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -50,12 +50,12 @@
             <objects>
                 <tableViewController title="Bills List" id="hAM-Ig-jro" customClass="ListViewController" customModule="DataPersistence" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="q89-1d-jeo">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ListViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListViewCell" id="rlb-f5-zj0">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rlb-f5-zj0" id="ldQ-sh-Dxm">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -239,7 +239,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDe-Xi-JQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2172" y="466"/>
+            <point key="canvasLocation" x="2091" y="979"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FHb-Rw-oRw">
@@ -296,4 +296,7 @@
             <point key="canvasLocation" x="2172" y="-258"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Hv4-Ub-vK0"/>
+    </inferredMetricsTieBreakers>
 </document>

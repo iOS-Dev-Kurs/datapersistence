@@ -68,10 +68,11 @@ class ListViewController : UITableViewController {
 
 extension ListViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return items.sections?.count ?? 0
     }
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.sections?.count ?? 0
+        let section = items.sections![section]
+        return section.numberOfObjects
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ListViewCell", forIndexPath: indexPath)

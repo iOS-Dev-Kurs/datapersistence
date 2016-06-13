@@ -14,7 +14,7 @@ class AddItemController : UIViewController{
 	
 	/// The context to save changes to. Should be a disposable child context of the main context.
 	var context: NSManagedObjectContext!
-	var list: List?
+	var list: List!
 	
 	@IBOutlet var titleTextfield: UITextField!
 	@IBOutlet var importanceField: UISegmentedControl!
@@ -32,6 +32,7 @@ class AddItemController : UIViewController{
 			item.name = titleTextfield.text ?? "Unnamed Item"
 			let importance = importanceField.selectedSegmentIndex
 			item.importance = importance ?? 0
+			item.list = list
 			// Save context
 			do {
 				try context.save()

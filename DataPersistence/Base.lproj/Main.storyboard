@@ -3,6 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -137,20 +140,34 @@
                     <view key="view" contentMode="scaleToFill" id="FV8-Yf-qGS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XK9-rq-aeZ">
+                                <rect key="frame" x="20" y="72" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XK9-rq-aeZ" firstAttribute="leading" secondItem="FV8-Yf-qGS" secondAttribute="leadingMargin" id="2ou-IE-NUj"/>
+                            <constraint firstItem="XK9-rq-aeZ" firstAttribute="top" secondItem="FV8-Yf-qGS" secondAttribute="firstBaseline" constant="72" id="hcj-vc-d8g"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gf3-bV-tO1">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="S7i-uJ-npp">
                             <connections>
-                                <segue destination="SQq-01-d4z" kind="unwind" unwindAction="unwindToLists:" id="34v-P2-DQn"/>
+                                <segue destination="SQq-01-d4z" kind="unwind" identifier="cancelList" unwindAction="unwindToLists:" id="Nw1-Ar-YLN"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="hDo-iE-1Ua">
                             <connections>
-                                <segue destination="SQq-01-d4z" kind="unwind" unwindAction="unwindToLists:" id="wFs-Ry-com"/>
+                                <segue destination="SQq-01-d4z" kind="unwind" identifier="saveList" unwindAction="unwindToLists:" id="5Li-Sq-OLT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="titleTextfield" destination="XK9-rq-aeZ" id="swW-Z4-rJ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5t-Il-fjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="SQq-01-d4z" userLabel="Exit" sceneMemberID="exit"/>
@@ -184,25 +201,51 @@
                     <view key="view" contentMode="scaleToFill" id="oaY-gq-4mA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OwI-0u-wSo">
+                                <rect key="frame" x="20" y="72" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wqL-SG-5eb">
+                                <rect key="frame" x="241" y="110" width="118" height="29"/>
+                                <segments>
+                                    <segment title="0"/>
+                                    <segment title="!"/>
+                                    <segment title="!!"/>
+                                    <segment title="!!!"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wqL-SG-5eb" firstAttribute="top" secondItem="oaY-gq-4mA" secondAttribute="firstBaseline" constant="121" id="cFD-fh-psH"/>
+                            <constraint firstItem="OwI-0u-wSo" firstAttribute="top" secondItem="oaY-gq-4mA" secondAttribute="firstBaseline" constant="72" id="lYh-H9-Xyt"/>
+                            <constraint firstItem="wqL-SG-5eb" firstAttribute="centerX" secondItem="oaY-gq-4mA" secondAttribute="centerX" id="qUz-fH-49b"/>
+                            <constraint firstItem="OwI-0u-wSo" firstAttribute="leading" secondItem="oaY-gq-4mA" secondAttribute="leadingMargin" id="xiV-RZ-ovW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f1l-5N-L5J">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gbG-CK-HjJ">
                             <connections>
-                                <segue destination="tkE-bx-T3G" kind="unwind" unwindAction="unwindToLists:" id="Sr0-Le-N91"/>
+                                <segue destination="tkE-bx-T3G" kind="unwind" identifier="cancelItem" unwindAction="unwindToItems:" id="NmW-Nq-2gt"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="8HN-3M-mYQ">
                             <connections>
-                                <segue destination="tkE-bx-T3G" kind="unwind" unwindAction="unwindToItems:" id="mwl-oL-yW3"/>
+                                <segue destination="tkE-bx-T3G" kind="unwind" identifier="saveItem" unwindAction="unwindToItems:" id="5C9-lB-XDU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="importanceField" destination="wqL-SG-5eb" id="1vg-rU-C4z"/>
+                        <outlet property="titleTextfield" destination="OwI-0u-wSo" id="hFd-HV-u6Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GG4-Tb-2cN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="tkE-bx-T3G" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1296" y="1990"/>
+            <point key="canvasLocation" x="1296" y="1954"/>
         </scene>
     </scenes>
 </document>

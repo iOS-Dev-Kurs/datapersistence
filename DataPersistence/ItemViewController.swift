@@ -20,7 +20,7 @@ class ItemViewController : UITableViewController{
 	}
 	
 	lazy var items: NSFetchedResultsController = {
-		let fetchRequest = NSFetchRequest(entityName: "To_Do_Thing")
+		let fetchRequest = NSFetchRequest(entityName: "Item")
 		fetchRequest.sortDescriptors = [ NSSortDescriptor(key: "importance", ascending: false) ]
 		// We can also restrict the set of observed objects with a predicate:
 		fetchRequest.predicate = NSPredicate(format: "list == %@", self.list)

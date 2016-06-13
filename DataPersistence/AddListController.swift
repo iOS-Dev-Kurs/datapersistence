@@ -26,7 +26,7 @@ class AddListController : UIViewController{
 		case "saveList":
 			
 			// Create list and set properties
-			let list = NSEntityDescription.insertNewObjectForEntityForName("To_Do_List", inManagedObjectContext: context) as! List
+			let list = NSEntityDescription.insertNewObjectForEntityForName("List", inManagedObjectContext: context) as! List
 			list.name = titleTextfield.text ?? "Unnamed List"
 			
 			// Save context

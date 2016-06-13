@@ -54,7 +54,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Cnu-jA-Ngy" kind="show" id="9Rd-Uw-ElP"/>
+                                    <segue destination="Cnu-jA-Ngy" kind="show" identifier="showItems" id="9Rd-Uw-ElP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -66,7 +66,7 @@
                     <navigationItem key="navigationItem" id="oFm-Sz-CjA">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qQ4-Qw-sXy">
                             <connections>
-                                <segue destination="gQA-5m-r50" kind="show" id="k9X-tg-USO"/>
+                                <segue destination="gQA-5m-r50" kind="show" identifier="addList" id="k9X-tg-USO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -97,7 +97,7 @@
             </objects>
             <point key="canvasLocation" x="607" y="1954"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Title-->
         <scene sceneID="pwe-Wv-msf">
             <objects>
                 <tableViewController id="Cnu-jA-Ngy" sceneMemberID="viewController">
@@ -121,6 +121,13 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="8o9-dU-VUz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="T0l-wE-n67">
+                            <connections>
+                                <segue destination="ylC-w9-zQF" kind="show" id="M59-TZ-CQB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWb-1S-hFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -158,7 +165,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="f1l-5N-L5J">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gbG-CK-HjJ"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8HN-3M-mYQ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="8HN-3M-mYQ"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GG4-Tb-2cN" userLabel="First Responder" sceneMemberID="firstResponder"/>

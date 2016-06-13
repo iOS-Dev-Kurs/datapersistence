@@ -11,6 +11,8 @@
 		77334DD01D0EBD9600A8ABFE /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77334DCF1D0EBD9600A8ABFE /* ItemViewController.swift */; };
 		77334DD21D0EBDA400A8ABFE /* AddItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77334DD11D0EBDA400A8ABFE /* AddItemController.swift */; };
 		77334DD41D0EBDB500A8ABFE /* AddListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77334DD31D0EBDB500A8ABFE /* AddListController.swift */; };
+		77334DD61D0EBE3900A8ABFE /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77334DD51D0EBE3900A8ABFE /* List.swift */; };
+		77334DD81D0EBE4500A8ABFE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77334DD71D0EBE4500A8ABFE /* Item.swift */; };
 		87D78C9B1D01A28F00DF478F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D78C9A1D01A28F00DF478F /* AppDelegate.swift */; };
 		87D78CA01D01A28F00DF478F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D78C9E1D01A28F00DF478F /* Main.storyboard */; };
 		87D78CA31D01A28F00DF478F /* DataPersistence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87D78CA11D01A28F00DF478F /* DataPersistence.xcdatamodeld */; };
@@ -24,6 +26,8 @@
 		77334DCF1D0EBD9600A8ABFE /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		77334DD11D0EBDA400A8ABFE /* AddItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemController.swift; sourceTree = "<group>"; };
 		77334DD31D0EBDB500A8ABFE /* AddListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListController.swift; sourceTree = "<group>"; };
+		77334DD51D0EBE3900A8ABFE /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		77334DD71D0EBE4500A8ABFE /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		87D78C971D01A28F00DF478F /* DataPersistence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataPersistence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D78C9A1D01A28F00DF478F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87D78C9F1D01A28F00DF478F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				87D78CA11D01A28F00DF478F /* DataPersistence.xcdatamodeld */,
+				77334DD51D0EBE3900A8ABFE /* List.swift */,
+				77334DD71D0EBE4500A8ABFE /* Item.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -167,6 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				77334DD21D0EBDA400A8ABFE /* AddItemController.swift in Sources */,
+				77334DD81D0EBE4500A8ABFE /* Item.swift in Sources */,
+				77334DD61D0EBE3900A8ABFE /* List.swift in Sources */,
 				87D78CA31D01A28F00DF478F /* DataPersistence.xcdatamodeld in Sources */,
 				87D78C9B1D01A28F00DF478F /* AppDelegate.swift in Sources */,
 				77334DD01D0EBD9600A8ABFE /* ItemViewController.swift in Sources */,

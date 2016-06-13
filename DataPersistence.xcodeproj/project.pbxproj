@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77334DCE1D0EBD8600A8ABFE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77334DCD1D0EBD8600A8ABFE /* ListViewController.swift */; };
+		77334DD01D0EBD9600A8ABFE /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77334DCF1D0EBD9600A8ABFE /* ItemViewController.swift */; };
+		77334DD21D0EBDA400A8ABFE /* AddItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77334DD11D0EBDA400A8ABFE /* AddItemController.swift */; };
+		77334DD41D0EBDB500A8ABFE /* AddListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77334DD31D0EBDB500A8ABFE /* AddListController.swift */; };
 		87D78C9B1D01A28F00DF478F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D78C9A1D01A28F00DF478F /* AppDelegate.swift */; };
 		87D78CA01D01A28F00DF478F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D78C9E1D01A28F00DF478F /* Main.storyboard */; };
 		87D78CA31D01A28F00DF478F /* DataPersistence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87D78CA11D01A28F00DF478F /* DataPersistence.xcdatamodeld */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77334DCD1D0EBD8600A8ABFE /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		77334DCF1D0EBD9600A8ABFE /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		77334DD11D0EBDA400A8ABFE /* AddItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemController.swift; sourceTree = "<group>"; };
+		77334DD31D0EBDB500A8ABFE /* AddListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListController.swift; sourceTree = "<group>"; };
 		87D78C971D01A28F00DF478F /* DataPersistence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataPersistence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D78C9A1D01A28F00DF478F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87D78C9F1D01A28F00DF478F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +87,10 @@
 		87D78CBA1D01B1C600DF478F /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				77334DCD1D0EBD8600A8ABFE /* ListViewController.swift */,
+				77334DCF1D0EBD9600A8ABFE /* ItemViewController.swift */,
+				77334DD11D0EBDA400A8ABFE /* AddItemController.swift */,
+				77334DD31D0EBDB500A8ABFE /* AddListController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -154,8 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77334DD21D0EBDA400A8ABFE /* AddItemController.swift in Sources */,
 				87D78CA31D01A28F00DF478F /* DataPersistence.xcdatamodeld in Sources */,
 				87D78C9B1D01A28F00DF478F /* AppDelegate.swift in Sources */,
+				77334DD01D0EBD9600A8ABFE /* ItemViewController.swift in Sources */,
+				77334DCE1D0EBD8600A8ABFE /* ListViewController.swift in Sources */,
+				77334DD41D0EBDB500A8ABFE /* AddListController.swift in Sources */,
 				87D78CB01D01A2FB00DF478F /* PersistentStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

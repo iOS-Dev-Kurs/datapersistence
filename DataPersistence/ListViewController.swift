@@ -13,7 +13,8 @@ import CoreData
 class ListViewController : UITableViewController {
     
     var overview : Overview!
-    private var context : NSManagedObjectContext {
+//    Lists context is not Overview context!!
+    var context : NSManagedObjectContext {
         return overview.managedObjectContext!
     }
     
@@ -38,6 +39,8 @@ class ListViewController : UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         switch segue.identifier! {
             case "createBill":
+                let billVC = (segue.destinationViewController as! UINavigationController).topViewController as! BillViewController
+                billVC.context = context
                 do {
                     try context.save()
                 } catch {

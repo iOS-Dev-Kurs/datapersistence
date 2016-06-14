@@ -11,7 +11,9 @@ import UIKit
 import CoreData
 
 class BillViewController: UIViewController {
+//    new content is saved in:
     var context : NSManagedObjectContext!
+//    write new bill to:
     var overviewBill : Overview!
     
     @IBOutlet weak var purposeTxt: UITextField!
@@ -21,12 +23,22 @@ class BillViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "addBill" {
-            let editContext = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
-            editContext.parentContext = context
-            editContext.ex
-            context.list.purpose = purposeTxt.text ?? "No Name"
-            context.list.money = amountTxt.text!
-            context.list.date = dateTxt.text ?? "unknown"
+//            new bill will be created:
+            let list = NSEntityDescription.insertNewObjectForEntityForName("List", inManagedObjectContext: context) as! List
+            
+//            information is given to:
+            
+//            list.list = overviewBill
+            list.purpose = purposeTxt.text ?? "No Name"
+            list.money = amountTxt.text!
+            list.date = dateTxt.text ?? "unknown"
+            
+//            content has to be saved every single time
+            do {
+                try context.save()
+            } catch {
+                print("Failed saving context: \(error)")
+            }
         }
     }
 }

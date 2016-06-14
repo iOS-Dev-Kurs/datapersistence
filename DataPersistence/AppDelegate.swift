@@ -25,8 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         // The context is our connection to Core Data's managed objects.
-        let context = persistentStack.mainContext
-        // TODO: Pass context on to view controllers
+        
+        let listsVC = (window!.rootViewController as! UINavigationController).topViewController as! OverviewViewController
+        listsVC.context = persistentStack.mainContext
         
         return true
     }

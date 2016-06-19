@@ -11,6 +11,9 @@ import CoreData
 
 class ListsViewController: UITableViewController {
     
+    
+    
+    
     /// The connection to the database
     var context: NSManagedObjectContext!
 
@@ -18,7 +21,7 @@ class ListsViewController: UITableViewController {
     private lazy var lists: NSFetchedResultsController = {
         // The fetch request defines the subset of objects to fetch
         let fetchRequest = NSFetchRequest(entityName: "List")
-        fetchRequest.sortDescriptors = [ NSSortDescriptor(key: "title", ascending: true) ]
+        fetchRequest.sortDescriptors = [ NSSortDescriptor(key: "lastDone", ascending: true) ]
         // Create the fetched results controller with the fetch request
         let resultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context, sectionNameKeyPath: nil, cacheName: nil)
         // The delegate can react to changes in the set of fetched objects
@@ -34,6 +37,7 @@ class ListsViewController: UITableViewController {
         } catch {
             print("Failed fetching objects: \(error)")
         }
+    
     }
     
     
@@ -77,6 +81,7 @@ class ListsViewController: UITableViewController {
             } catch {
                 print("Failed saving context: \(error)")
             }
+
             
         default:
             break
@@ -100,10 +105,14 @@ extension ListsViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "d.M"
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("ListCell", forIndexPath: indexPath)
         let list = lists.sections![indexPath.section].objects![indexPath.row] as! List
         cell.textLabel?.text = list.title
-        cell.detailTextLabel?.text = String(list.items.count)
+        cell.detailTextLabel?.text = "last done: \(formatter.stringFromDate(list.lastDone))"
         return cell
     }
     

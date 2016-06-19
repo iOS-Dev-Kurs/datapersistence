@@ -55,6 +55,28 @@ class ItemsViewController: UITableViewController {
             let createItemViewController = (segue.destinationViewController as! UINavigationController).topViewController as! CreateItemViewController
             createItemViewController.context = editContext
             createItemViewController.list = editList
+            
+            
+        case "doneButton":
+             // Reset Done things and increase weight.
+             
+            do {
+            for item in list.items {
+            if item.done {
+            item.done = false
+            item.doubleMaxiumWeight += 10
+            }
+            }
+                
+            list.lastDone = NSDate()
+            try context.save()
+             
+             
+            } catch {
+            print("Failed saving context: \(error)")
+            }
+          
+            
 
         default:
             break
@@ -107,8 +129,21 @@ extension ItemsViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ItemCell", forIndexPath: indexPath)
         let item = items.sections![indexPath.section].objects![indexPath.row] as! Item
+        
+        let workWeight = floor(CalculateWeight((item.doubleMaxiumWeight), repNumber: item.numberOfReps)/2)
+        
+        
+        
         cell.textLabel?.text = item.title
-        cell.detailTextLabel?.text = item.notes
+        cell.detailTextLabel?.numberOfLines = 2
+        
+        if item.large {
+            cell.detailTextLabel?.text = "Warmup:   8x 40%:\(workWeight*0.4)kg  5x 60%: \(workWeight*0.6)kg  2x 80% \(workWeight*0.8)kg" + "\n" + "X Sets with \(workWeight) kg and \(item.numberOfReps) Reps"
+        } else {
+            cell.detailTextLabel?.text = "Warmup: 8x 50%:\(Float(item.doubleMaxiumWeight)/2)kg" + "\n" + "X Sets with \(workWeight) kg and \(item.numberOfReps) Reps"
+        }
+        
+      
         cell.textLabel?.textColor = item.done ? UIColor.lightGrayColor() : UIColor.darkTextColor()
         cell.accessoryType = item.done ? .Checkmark : .None
         return cell

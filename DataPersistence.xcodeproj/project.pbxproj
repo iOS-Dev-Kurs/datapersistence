@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17B83C421D10684A00164152 /* Weightcalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B83C411D10684A00164152 /* Weightcalculator.swift */; };
 		8780FE241D021CC60079DD40 /* CreateItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780FE221D021CC60079DD40 /* CreateItemViewController.swift */; };
 		8780FE251D021CC60079DD40 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8780FE231D021CC60079DD40 /* ItemsViewController.swift */; };
 		87D78C9B1D01A28F00DF478F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D78C9A1D01A28F00DF478F /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17B83C411D10684A00164152 /* Weightcalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weightcalculator.swift; sourceTree = "<group>"; };
 		8780FE221D021CC60079DD40 /* CreateItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateItemViewController.swift; sourceTree = "<group>"; };
 		8780FE231D021CC60079DD40 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		87D78C971D01A28F00DF478F /* DataPersistence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataPersistence.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 				87D78CA11D01A28F00DF478F /* DataPersistence.xcdatamodeld */,
 				87D78CB21D01AB7A00DF478F /* List.swift */,
 				87D78CB41D01ABE600DF478F /* Item.swift */,
+				17B83C411D10684A00164152 /* Weightcalculator.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				87D78CA31D01A28F00DF478F /* DataPersistence.xcdatamodeld in Sources */,
 				87D78C9D1D01A28F00DF478F /* ListsViewController.swift in Sources */,
 				87D78CB91D01B0C600DF478F /* CreateListViewController.swift in Sources */,
+				17B83C421D10684A00164152 /* Weightcalculator.swift in Sources */,
 				87D78C9B1D01A28F00DF478F /* AppDelegate.swift in Sources */,
 				87D78CB31D01AB7A00DF478F /* List.swift in Sources */,
 				87D78CB51D01ABE600DF478F /* Item.swift in Sources */,

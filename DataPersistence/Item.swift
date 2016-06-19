@@ -14,7 +14,9 @@ class Item: NSManagedObject {
     @NSManaged var list: List
     @NSManaged var created: NSDate
     @NSManaged var title: String
-    @NSManaged var notes: String
+    @NSManaged var large: Bool
+    @NSManaged var doubleMaxiumWeight: Int
+    @NSManaged var numberOfReps: Int
     @NSManaged var done: Bool
     
     // Called when the object is created, i.e. inserted in a context
